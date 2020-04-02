@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{apacite}
+\usepackage[ngerman]{babel}
+
+\title{Experimentalprogrammierung mit MATLAB \& Psychtoolbox3}
+\author{Ann-Kathrin Schalkamp}
+\date{SS 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Motivation}
+In zwei Studien von Voss et al. \cite{voss2008accurate,voss2009electrophysiological} wird postuliert, dass das visuelle Arbeitsgedächtnis besser unter geteilter Aufmerksamkeit funktioniere. Es wird beschrieben, dass das Wiedererkennen von Bildern besser gelinge, wenn während der Einprägungsphase eine zweite Aufgabe ausgeübt werde. Ein bewusstes Erinnern sei somit nicht notwendig für das Wiedererkennen von Stimuli. Sie beschreiben, dass Wiedererkennung angetrieben sei von nicht deklarativem Wissen.\\
+In beiden Studien wird ein ähnliches Experiment ausgeführt. Die Teilnehme,r sollen sich Kaleidoskope einprägen und werden anschließend beispielsweise mit einer 2-alternative forced choice task getestet. In der Hälfte der Experimentblöcke wird während der Enkodierung eine zweite Aufgabe ausgeführt. Das Ergebnis der Studien war, dass eine bessere Gedächtnisleistung möglich sei unter geteilter Aufmerksamkeit als unter voller Aufmerksamkeit. Zudem berichten sie, dass die Ergebnisse besser gewesen seien, wenn die Teilnehmer angeben, dass sie gera,ten haben als wenn sie sich sehr sicher oder sehr unsicher waren.\\
+Diese Ergebnisse sind bemerkenswert, da sie nicht mit den konventionellen Theorien übereinstimmen. Daher wäre es interessant zu sehen, ob diese Ergebnisse repliziert werden können. Dies wurde versucht mit dem Ergebnis, dass die Funde nicht wiederholt werden konnten \cite{jeneson2010recognition}. \\
+Eine interessante Weiterführung dieser Debatte wäre, zu beeinflussen und zu kontrollieren, wann Teilnehmer raten, also implizites Gedächtnis nutzen und wann sie sich an etwas explizit erinnern. Voss et al. haben versucht dies anhand der vor dem Experiment gezeigten Instruktionen zu beeinflussen \cite{voss2010makes}. Eine andere Möglichkeit, die hier nun untersucht werden soll, ist die Antwortzeit zu beeinflussen.
+\newpage
+\section{Experiment}
+Es wird das zweite Experiment von Voss et al. \cite{voss2008accurate} wiederholt mit der Veränderung, dass im Voraus die Teilnehmer dazu angehalten werden zu raten, oder nur zu antworten, wenn sie sich tatsächlich erinnern. Dies soll sowohl durch die gezeigten Instruktionen beeinflusst als auch anhand der Antwortzeiten kontrolliert werden.\\
+\subsection{Stimuli}
+Die Datenbasis enthält 80 Bilder von Kaleidoskopen, die in 40 Paare von ähnlichen Bildern aufgeteilt werden. Jedes Kaleidoskop wird kreiert, indem drei Hexagone in verschiedenen Farben übereinander gelegt werden. Jedes Hexagon wird dann drei Mal verändert durch Seitenhalbierung und Ablenkung in eine zufällige Richtung.Von den Bildpaaren wird zufällig eines als 'target' ausgewählt. Die Bilder werden auf schwarzem Hintergrund gezeigt.
+\subsection{Design}
+Den Teilnehmern werden 14 Bilder gezeigt, jeweils für 2000 Millisekunden, mit einer Pause von 3500 Millisekunden zwischen jedem Bild. Zusätzlich wird in den Blöcken zu geteilter Aufmerksamkeit eine Audiodatei abgespielt. Mit jedem Kaleidoskop wird eine gesprochene Zahl dargeboten. Bei jeder Darstellung eines Kaleidoskops, müssen die Teilnehmer mittels Tastendruck angeben, ob die zuvor gehörte Zahl gerade oder ungerade war (1-back task).\\
+Anschließend wird eine forced-choice task durchgeführt, in der ein 'target' und ein 'distractor' gemeinsam für 2000 Millisekunden gezeigt werden. Mittels Tastendruck gibt der Teilnehmer an, ob rechts oder links das 'target' abgebildet ist. Für den Testdatensatz, werden zehn 'targets' zusammen mit zehn 'distractors' gemischt, die zufällig aus dem Datensatz gezogen werden. 'Target' und 'distractor' erscheinen mit gleicher Wahrscheinlichkeit rechts und links. Die Antwort des Teilnehmers muss innerhalb von 200 Millisekunden oder 2 Minuten erfolgen, für jeweils die implizite und explizite Erinnerungsaufgabe. Nach jedem Testpaar wird der Teilnehmer gefragt, ob er geraten hat, oder sich sicher war.
+\subsection{Ablauf}
+Es werden vier Blöcke für jeden Teilnehmer durchgeführt. Es wird das Kreuzprodukt aus geteilter vs voller Aufmerksamkeit und Raten vs Überlegen durchgeführt. Ungeteilte Aufmerksamkeit mit begrenzter Antwortzeit, ungeteilte Aufmerksamkeit mit unbegrenzter Antwortzeit, sowie geteilte Aufmerksamkeit mit begrenzter Antwortzeit und geteilte Aufmerksamkeit mit unbegrenzter Antwortzeit. Die Reihenfolge dieser Blöcke wird für jeden Teilnehmer randomisiert.
+\bibliography{experiment_idea}
+\bibliographystyle{apacite}
+\end{document}
